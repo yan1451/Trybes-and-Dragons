@@ -3,4 +3,4 @@ export default interface Energy {
   amount: number;
 }  
 
-export type EnergyType = string;
+export type EnergyType = 'mana' | 'stamina';
