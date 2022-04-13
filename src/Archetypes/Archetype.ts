@@ -10,11 +10,14 @@ export default abstract class Archetype {
   }
 
   get name() { return this._name; }
-  get special() { return this._special; }
-  get cost() { return this._cost; }
-  abstract get energytype(): EnergyType;
 
-  static createdArchetypeInstances(): void {
-    throw new Error('Not implement');    
+  get special() { return this._special; }
+
+  get cost() { return this._cost; }
+
+  abstract get energyType(): EnergyType;
+
+  public static createdArchetypeInstances(): number {
+    throw new Error('Not implemented');
   }
 }
